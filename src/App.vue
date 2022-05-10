@@ -2,7 +2,7 @@
 <template>
   <div class="todoList">
     <div class="title">
-      <h2>You have {{todos.length}} Todos</h2>
+      <h2>{{ todoTitle }}</h2>
     </div>
       <TodoList
       v-bind:todos="todos"
@@ -42,6 +42,15 @@ export default {
     RmItem(id) {
       this.todos = this.todos.filter(todo => id !== todo.id)
       console.log (id)
+    }
+  },
+  computed: {
+    todoTitle() {
+      if (this.todos.length > 0) {
+        return `You have ${this.todos.length} Todos`
+      }
+
+      return 'No todos!'
     }
   }
 

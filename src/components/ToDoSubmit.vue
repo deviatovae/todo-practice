@@ -24,6 +24,7 @@ export default {
       if (this.text.length) {
         this.$emit('onSubmit', this.text)
         this.text = ''
+
       }
     }
   }
