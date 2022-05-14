@@ -1,4 +1,5 @@
 # todo-list
+Demo: https://deviatovae.github.io/todo-practice/
 
 ## Project setup
 ```
