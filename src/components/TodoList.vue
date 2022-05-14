@@ -32,5 +32,10 @@ export default {
 </script>
 
 <style scoped>
-
+ul {
+  margin: 5px 0 10px 0;
+  padding: 0;
+  list-style: none;
+  justify-content: left;
+}
 </style>

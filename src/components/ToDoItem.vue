@@ -27,7 +27,8 @@ export default {
 
   display: flex;
   flex-direction: row;
-  background: lightgrey;
+  background: #c17f26;
+  opacity: 0.7;
   border-radius: 50%;
   padding: 3px;
   align-items: center;
@@ -43,4 +44,14 @@ export default {
   cursor: pointer
 }
 
+li {
+  margin: 5px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cfcfcf;
+  font-family: "Lucida Bright", serif;
+  background-color: rgba(216,213,210, 0.7);
+  line-height: 24px;
+}
 </style>

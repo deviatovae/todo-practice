@@ -59,8 +59,24 @@ export default {
 
 <style>
 html, body {
+  margin: 0;
   width: 100%;
   height: 100%;
+  position: relative;
+}
+body:before {
+  content: "";
+  background-image: url("https://images.pexels.com/photos/6690924/pexels-photo-6690924.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+
 }
 .todoList {
   width: 30%;
@@ -78,42 +94,10 @@ html, body {
   -webkit-box-shadow: 0 0 14px 2px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 0 0 14px 2px rgba(34, 60, 80, 0.2);
   box-shadow: 0 0 14px 2px rgba(34, 60, 80, 0.2);
-  background-color: slateblue;
-  color: darksalmon;
+  background-color: #86abbd;
+  color: #d3cac0;
+  font-family: "Lucida Handwriting", serif;
 }
 
-input {
-  width:70%;
-  padding: 8px;
-  margin: 0;
 
-}
-ul {
-  margin: 5px 0 5px 0;
-  padding: 0;
-  list-style: none;
-  justify-content: left;
-}
-
-li {
-  margin: 0;
-  padding: 6px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #cfcfcf;
-}
-
-button {
-  padding: 8px;
-  background-color: darksalmon;
-  color: slateblue;
-  width: 97%
-}
-
-button:hover {
-  cursor: pointer;
-}
-input:hover {
-  cursor: pointer;
-}
 </style>
